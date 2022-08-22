@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'montserratregular';
+  src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+       url('../fonts/montserrat-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'montserratsemibold';
+  src: url('../fonts/montserrat-semibold-webfont.woff2') format('woff2'),
+       url('../fonts/montserrat-semibold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+
+
+@font-face {
+  font-family: 'montserratbold';
+  src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+       url('../fonts/montserrat-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:focus {
+  outline: 3px solid rgba(0,0,255,.3);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-family: "montserratregular",sans-serif;
+}
+
+.container {
+  max-width: 1770px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 18.571px 37.1419px;
+  font-size: 23px;
+  line-height: 1;
+  font-weight: 600;
+  text-transform: none;
+  color: white;
+  background-color: #FF9900;
+  border-radius: 16px;
+  transition: background-color .3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #FFB84D;
+}
+
+.btn:focus {
+  background-color: #FFB84D;
+}
+
+.btn:active {
+  background-color: #E1670E;
+}
+
+/* Header */
+
+.header {
+  height: 100px;
+  background: #FFFFFF;
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+  border-radius: 0px 0px 32px 32px;
+  font-family: "montserratsemibold",sans-serif;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content:flex-start;
+  height: 100%;
+}
+
+.header-container__logo {
+  margin-left: -1px;
+  margin-top: 5px;
+  margin-right: auto;
+  align-items: center;
+}
+
+.header-container__nav-list {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  align-self: flex-end;
+}
+
+.header-nav-list__item:not(:last-child) {
+  margin-right: 85px;
+}
+
+.header-container__search {
+  display: flex;
+  align-items: center;
+}
+
+.header-container__search-icon {
+  background-image: url(../img/search.png);
+  margin-left: 260px;
+  width: 24px;
+  height: 24px;
+}
