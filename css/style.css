@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: 'montserratregular';
   src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
        url('../fonts/montserrat-regular-webfont.woff') format('woff');
@@ -29,6 +29,30 @@
   font-weight: normal;
   font-style: normal;
 
+} */
+
+h1 {
+  display: block;
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  font-size: 1em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.h3 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
 }
 
 * {
@@ -54,7 +78,7 @@ img {
 }
 
 html {
-  font-family: "montserratregular",sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .container {
@@ -65,13 +89,30 @@ html {
 
 .btn {
   display: inline-block;
-  padding: 18.571px 37.1419px;
+  padding: 25px 39px;
   font-size: 23px;
-  line-height: 1;
-  font-weight: 600;
+  line-height: 28.04px;
+  font-weight: 700;
   text-transform: none;
+  text-align: center;
   color: white;
   background-color: #FF9900;
+  border-radius: 16px;
+  transition: background-color .3s ease;
+  cursor: pointer;
+}
+
+.btn-small {
+  display: inline-block;
+  padding: 17px 35px;
+  font-size: 16px;
+  line-height: 19.5px;
+  font-weight: 700;
+  text-transform: none;
+  text-align: center;
+  color: white;
+  background-color: transparent;
+  border: 3px solid #FF9900;
   border-radius: 16px;
   transition: background-color .3s ease;
   cursor: pointer;
@@ -96,7 +137,7 @@ html {
   background: #FFFFFF;
   box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
   border-radius: 0px 0px 32px 32px;
-  font-family: "montserratsemibold",sans-serif;
+  font-family: 'Montserrat',sans-serif;
 }
 
 .header-container {
@@ -119,6 +160,7 @@ html {
   align-items: center;
   font-size: 18px;
   font-weight: 600;
+  letter-spacing: .0055em;
   align-self: flex-end;
 }
 
@@ -137,3 +179,191 @@ html {
   width: 24px;
   height: 24px;
 }
+
+/* Hero */
+
+.section-hero {
+  margin-top: 50px;
+}
+
+.section-hero__container {
+  background-image: url(../img/hero-background.png);
+  border-radius: 30px;
+  height: 620px;
+  }
+
+.section-hero__content {
+  padding-top: 100px;
+  padding-left: 80px;
+  width: 917px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  /* line-height: 85px; */
+  color: #FFFFFF;
+}
+
+.section-hero__heading {
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 85px;
+}
+
+.section-hero__description {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.section-hero__action {
+  margin-top: 89px;
+  line-height: 0;
+  padding: 0 0;
+}
+
+.section-hero__slider {
+  height: 15px;
+  width: 85px;
+  margin-top: 55px;
+  margin-left: 763px;
+}
+
+.section-hero__slider-selector {
+  display: flex;
+  align-items: center;
+}
+
+.section-hero__slider-label {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #cacaca;
+}
+
+.section-hero__slider-label:not(:last-child) {
+  margin-right: 20px;
+}
+
+/* Section-about */
+
+.section-about {
+  margin-top: 50px;
+}
+
+.section-about-description__heading {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+}
+
+.section-about-description__text {
+  margin-top: 20px;
+  width: 1235px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.section-about-cards {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.section-about-cards__more {
+  display: flex;
+  width: 868px;
+  height: 622px;
+  background: url(../img/cards-more-background.jpg);
+  border-radius: 32px;
+}
+
+.section-about-cards__more-bottom {
+  align-self: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 32px;
+  height: 196px;
+  width: 100%;
+  
+  }
+
+  .section-about-cards__more-text {
+    margin-left: 50px;
+    width: 433px;
+    height: 96px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 32px;
+
+  }
+
+ .section-about-cards__tips-list {
+  margin-left: 32px;
+ }
+
+ .section-about-cards__tip {
+  width: 870px;
+  height: 295px;
+  background: #FFFFFF;
+  border: 1px solid #CACACA;
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  
+ }
+
+ .section-about-cards__tip-top {
+  margin-bottom: 32px;
+ }
+
+ .section-about-cards__more-btn {
+  margin-right: 50px;
+ }
+
+.section-about-cards__tip {
+    align-items: center;
+}
+
+.section-about-cards__tip-icon {
+  margin-left: 60px;
+  width: 190px;
+  height: 165px;
+}
+
+.section-about-cards__tip-text {
+  width: 452px;
+  margin-left: 50px;
+}
+
+.section-about-cards__tip-heading {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+.section-about-cards__tip-description {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000000;
+  }
+
+ .section-about-cards__tip-top-icon {
+  background-image: url(../img/tip1-icon.png);
+ }
+
+ .section-about-cards__tip-down-icon {
+  background-image: url(../img/tip2-icon.png);
+ }

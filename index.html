@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -55,7 +55,20 @@
             Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
           </p>
           <div class="section-hero__action">
-            <a href="" class="button section-hero__button">Заказать расчет</a>
+            <a href="" class="btn section-hero__button">Заказать расчёт</a>
+          </div>
+          <div class="section-hero__slider">
+            <ul class="section-hero__slider-selector">
+              <li class="section-hero__slider-label">
+                <a href="" class="section-hero__slider-link1"></a>
+              </li>
+              <li class="section-hero__slider-label">
+                <a href="" class="section-hero__slider-link2"></a>
+              </li>
+              <li class="section-hero__slider-label">
+                <a href="" class="section-hero__slider-link3"></a>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -71,37 +84,49 @@
             Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный прототип будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению качества экспериментов.
           </p>
         </div>
-        <div class="section-about__cards section-about-cards">
-          <ul class="section-about__list section-about-list ">
-            <li class="section-about-list__item">
-              <p class="section-about-list__item-text">
+        <div class="section-about-cards">
+
+          <div class="section-about-cards__more">
+            <div class="section-about-cards__more-bottom">
+              <div class="section-about-cards__more-text">
                 Принимая во внимание показатели успешности, перспективное планирование способствует подготовке и реализации новых принципов
-              </p>
-              <a href="" class="section-about-list__b">
+              </div>
+              <a href="" class="section-about-cards__more-btn btn-small">
                 Подробнее
               </a>
-            </li>
-            <li class="section-about-list__item">
-              <svg class="section-about-list__item-icon"></svg>
-              <strong class="section-about-list__item-heading">
-                Консультация с широким активом
-              </strong>
-              <p class="section-about-list__item-description">
-                А также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений
-              </p>
-            </li>
-            <li class="section-about-list__item">
-              <svg class="section-about-list__item-icon"></svg>
-              <strong class="section-about-list__item-heading">
-                В своём стремлении повысить
-              </strong>
-              <p class="section-about-list__item-description">
-                Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества
-              </p>
-            </li>
-          </ul>
+            </div>
+          </div>
+
+          <div class="section-about-cards__tips-list">
+
+            <div class="section-about-cards__tip section-about-cards__tip-top">
+              <div class="section-about-cards__tip-icon section-about-cards__tip-top-icon"></div>
+              <div class="section-about-cards__tip-text">
+                <div class="section-about-cards__tip-heading">
+                  Консультация с широким активом
+                </div>
+                <div class="section-about-cards__tip-description">
+                  А также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для как самодостаточных, так и внешне зависимых концептуальных решений
+                </div>
+              </div>
+            </div>
+
+            <div class="section-about-cards__tip section-about-cards__tip-top">
+              <div class="section-about-cards__tip-icon section-about-cards__tip-down-icon"></div>
+              <div class="section-about-cards__tip-text">
+                <div class="section-about-cards__tip-heading">
+                  В своём стремлении повысить
+                </div>
+                <div class="section-about-cards__tip-description">
+                  Качество жизни, они забывают, что сплочённость команды профессионалов представляет собой интересный эксперимент проверки прогресса профессионального сообщества
+                </div>
+              </div>
+            </div>
+
+          </div>
+            
         </div>
-        </div>
+      </div>
     </section>
 
     <section class="section-how">
@@ -279,6 +304,10 @@
 
 <!-- тестовые строчки для гита здесь и далее -->
 
-проверка раз два три
+<!-- проверка раз два 
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos blanditiis dignissimos exercitationem, quae architecto deleniti earum magni necessitatibus laboriosam voluptate recusandae natus, explicabo eius minus! Suscipit sunt quidem natus porro.
+
+
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit ea recusandae adipisci facere cum aut quae quas nisi in consectetur voluptas porro odit aspernatur iure similique, deserunt harum architecto minus. -->
 
 </html>
