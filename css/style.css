@@ -44,6 +44,13 @@ h2 {
   font-size: 1em;
   margin-top: 0;
   margin-bottom: 0;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+  color: #000000;
+  /* padding: 0 0; */
 }
 
 .h3 {
@@ -352,6 +359,7 @@ html {
 }
 
 .section-about-cards__tip-description {
+  margin-top: 8px;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
@@ -367,3 +375,334 @@ html {
  .section-about-cards__tip-down-icon {
   background-image: url(../img/tip2-icon.png);
  }
+
+ /* Section How */
+
+ .section-how__container {
+  margin-top: 100px;
+  min-height: 646px;
+ }
+
+ .section-how__heading {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+  /* identical to box height */
+  color: #000000;
+ }
+
+ .section-how-steplist {
+  margin-top: 50px;
+  display: flex;
+  
+ }
+
+ .section-how-steplist__item {
+  margin-right: 85px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height */
+  color: #000000;
+ }
+
+.section-how__list {
+  margin-top: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+
+ .section-how-list__item-heading {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* identical to box height, or 133% */
+  color: #000000;
+ }
+
+ .section-how-list__item-description {
+  margin-top: 8px;
+  max-width: 758px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  /* or 200% */
+  color: #000000;
+ }
+
+ .section-how-list__button-more {
+  /* display: flex;
+  flex-direction: row;
+  align-items: center; */
+  padding: 19px 38px;
+  gap: 10px;
+  background: #FF9900;
+  border-radius: 16px;
+  border: 0px ;
+  line-height: 24px;
+
+ }
+
+ .section-how-list__button-oferta {
+  margin-left: 32px;
+  padding: 19px 38px;
+  gap: 10px;
+  border: 1px solid #000000;
+  border-radius: 16px;
+  color: #000000;
+  font-weight: 400;
+ }
+
+ .section-how-list__img {
+  width: 870px;
+  height: 460px;
+  display: block;
+  align-self: flex-end;
+  background-image: url(../img/section-how-to-step-1.jpg);
+  background-repeat: no-repeat;
+  background-size: auto;
+ }
+
+ /* Section FAQ */
+
+.section-faq {
+  margin-top: 100px;
+}
+
+.section-faq__heading {
+  padding-top: 11px;
+}
+
+.section-faq__list {
+  margin-top: 32px;
+}
+
+.section-faq__list-item-text {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.section-faq__list-item {
+  padding: 30px 0px;
+  border-top: 1px solid #CACACA;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.section-faq__list:last-child {
+  border-bottom: 1px solid #CACACA;
+}
+
+.section-faq__list-item-icon {
+  background-image: url(../img/section-faq-х.png);
+  width: 50px;
+  height: 50px;
+  align-self: flex-end;
+}
+
+/* Section-footer */
+
+.footer {
+  margin-top: 100px;
+  height: 594px;
+  background-color: #000000;
+  
+}
+
+.footer__container {
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  }
+
+.footer__description {
+  width: 363px;
+  height: 320px;
+  margin: 137px 0;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #CACACA;
+}
+
+.footer__description-text {
+  margin-top: 0;
+}
+
+.footer__menu {
+  height: 494px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+
+.footer__logo {
+  background-image: url(../img/footer-logo.svg);
+  width: 224px;
+  height: 72px;
+}
+
+.footer__menu-list {
+  margin-top: 20px;
+  
+}
+
+.footer__menu-list-item {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 36px;
+  color: #CACACA;
+}
+
+.footer__menu-list-link {
+  color: #CACACA;
+}
+
+.footer__menu-social-list {
+  margin-top: 90px;
+  width: 145px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__menu-list-icon {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  background-position: center;
+}
+
+.footer__menu-social-link {
+  line-height: 0;
+}
+
+.footer__menu-social-link-ok {
+  background-image: url(../img/footer-social-media-ok.svg);
+  width: 60px;
+  height: 60px;
+}
+
+.footer__menu-social-link-vk {
+  background-image: url(../img/footer-social-media-vk.svg);
+  width: 60px;
+  height: 60px;
+}
+
+.footer__form {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  width: 570px;
+  height: 494px;
+  margin-left: 113px;
+}
+
+.footer__form-heading {
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 59px;
+  color: #CACACA;
+}
+
+.footer__input {
+  width: 100%;
+  height: 60px;
+  background: #414141;
+  border-radius: 16px;
+  /* transform: matrix(0, -1, -1, 0, 0, 0);   */
+  /* align-self: center; */
+  border: 0;
+  color: #CACACA;
+  padding-left: 24px;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.footer__form-input-fio {
+  margin-bottom: 25px;
+}
+
+.footer__form-input-email {
+  margin-bottom: 25px;
+}
+
+.footer__form-input-message {
+  height: 150px;
+  padding-top: 14px;
+  margin-bottom: 32px;
+}
+
+.footer__form-button {
+  padding-left: 52px;
+  padding-right: 52px;
+  background: #FF9900;
+  border: 0;
+}
+
+.footer__form-send {
+  display: block;
+}
+
+.footer__form-checkbox {
+  margin-left: 22px;
+  background-color: transparent;
+  border: 1px solid #CACACA;
+  border-radius: 2px;
+}
+
+.footer__form-checkbox-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 32px;
+  color: #CACACA;
+}
+
+.footer__form-checkbox-custom {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.footer__form-checkbox-custom+label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.footer__form-checkbox-custom+label::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #cacaca;
+  border-radius: 2px;
+  margin-left: 22px;
+  margin-right: 3px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+}
+
+.footer__form-checkbox-custom:checked+label::before {
+    background-image: url(../img/checkbox-checked.svg);
+    z-index: 1;
+}

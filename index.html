@@ -111,7 +111,7 @@
               </div>
             </div>
 
-            <div class="section-about-cards__tip section-about-cards__tip-top">
+            <div class="section-about-cards__tip section-about-cards__tip-down">
               <div class="section-about-cards__tip-icon section-about-cards__tip-down-icon"></div>
               <div class="section-about-cards__tip-text">
                 <div class="section-about-cards__tip-heading">
@@ -137,49 +137,47 @@
         </h2>
 
         <ul class="section-how__steplist section-how-steplist">
-          <li>
-            <a href="" class="section-how-steplist__item">
+          <li class="section-how-steplist__item">
+            <a href="" class="section-how-steplist__link">
               1 шаг
             </a>
           </li>
-          <li>
-            <a href="" class="section-how-steplist__item">
+          <li class="section-how-steplist__item">
+            <a href="" class="section-how-steplist__link">
               2 шаг
             </a>
           </li>
-          <li>
-            <a href="" class="section-how-steplist__item">
+          <li class="section-how-steplist__item">
+            <a href="" class="section-how-steplist__link">
               3 шаг
             </a>
           </li>
-          <li>
-            <a href="" class="section-how-steplist__item">
+          <li class="section-how-steplist__item">
+            <a href="" class="section-how-steplist__link">
               4 шаг
             </a>
           </li>
         </ul>
 
-        <ul class="section-how__list section-how-list">
-          <li class="section-how-list__item">
-            <strong class="section-how-list__item-heading">
+        <div class="section-how__list section-how-list">
+          <div class="section-how-list__item">
+            <div class="section-how-list__item-heading">
               Проводим консультацию
-            </strong>
+            </div>
             <p class="section-how-list__item-description">
               Влечёт за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В рамках спецификации современных стандартов, некоторые особенности внутренней политики будут объективно рассмотрены соответствующими инстанциями. 
-А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
+              <br>А также представители современных социальных резервов, инициированные исключительно синтетически, ограничены исключительно образом мышления. Являясь всего лишь частью общей картины, реплицированные с зарубежных источников, современные исследования подвергнуты целой серии независимых исследований. Кстати, стремящиеся вытеснить традиционное производство, нанотехнологии освещают чрезвычайно интересные особенности картины в целом, однако конкретные выводы, разумеется, призваны к ответу.
             </p>
-            <a href="" class="section-how-list__button-more">
+            <a href="" class="btn-small section-how-list__button-more">
               Подробнее
             </a>
-            <a href="" class="section-how-list__button-oferta">
+            <a href="" class="btn-small section-how-list__button-oferta">
               Договор
             </a>
-          </li>
-          <li class="section-how-list__img">
-            <img src="" alt="step1-visual">
-          </li>
+          </div>
+          <div class="section-how-list__img"></div>
 
-        </ul>
+        </div>
       </div>
     </section>
 
@@ -228,9 +226,7 @@
     <section class="footer">
       <div class="container footer__container">
         <div class="footer__menu">
-          <a href="" class="footer__logo">
-            <img src="" alt="Евклид Логотип">
-          </a>
+          <a href="" class="footer__logo"></a>
           <ul class="footer__menu-list">
             <li class="footer__menu-list-item">
               <a href="" class="footer__menu-list-link">
@@ -271,12 +267,12 @@
           <ul class="footer__menu-social-list">
             <li class="footer__menu-social-item">
               <a href="" class="footer__menu-social-link">
-                <span class="footer__menu-social-link-ok"></span>
+                <span class="footer__menu-list-icon footer__menu-social-link-ok"></span>
               </a>
             </li>
             <li class="footer__menu-social-item">
               <a href="" class="footer__menu-social-link">
-                <span class="footer__menu-social-link-vk"></span>
+                <span class="footer__menu-list-icon footer__menu-social-link-vk"></span>
               </a>
             </li>
           </ul>
@@ -286,12 +282,18 @@
           <h2 class="footer__form-heading">
             Оставить заявку
           </h2>
-          <input type="text" class="footer__input footer__form-input-fio">
-          <input type="text" class="footer__input footer__form-input-fio">
-          <input type="text" class="footer__input footer__form-input-fio">
-          <a href="" class="footer__form-button">
-            Отправить данные
-          </a>
+          <input type="text" class="footer__input footer__form-input-fio" placeholder="Фамилия, имя и отчество*">
+          <input type="text" class="footer__input footer__form-input-email" placeholder="Email*">
+          <textarea name="message" id="" cols="30" rows="10"  class="footer__input footer__form-input-message" placeholder="Сообщение"></textarea>
+          <div class="footer__form-send">
+            <a href="" class="footer__form-button btn-small">
+              Отправить данные
+            </a>
+            <input id="agree" type="checkbox" class="footer__form-checkbox footer__form-checkbox-custom">
+            <label for="agree" class="footer__form-checkbox-title">
+              Согласен на обработку данных
+            </label>
+          </div>
         </div>
 
         <div class="footer__description">
